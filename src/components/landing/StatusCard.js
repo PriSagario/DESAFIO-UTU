@@ -24,6 +24,8 @@ const colors = {
     purple: 'bg-purple-500',
     pink: 'bg-pink-500',
     red: 'bg-red-500',
+    logo1: 'bg-logo1-500',
+    logo2: 'bg-logo2-500',
 };
 
 export default function StatusCard({ color, icon, title, children }) {

@@ -8,66 +8,80 @@ import LeadText from '@material-tailwind/react/LeadText';
 import Paragraph from '@material-tailwind/react/Paragraph';
 import StatusCard from 'components/landing/StatusCard';
 import Teamwork from 'assets/img/teamwork.jpeg';
+import HotelCard from 'components/landing/HotelCard';
+import ImgHotel1 from '../../assets/img/montain.jpg';
 
 export default function WorkingSection() {
     return (
-        <section className="pb-20 bg-gray-100 -mt-32">
-            <div className="container  mx-auto px-4">
+        <section className="pb-20 bg-gray-200 -mt-32">
+            <div className="container  mx-auto px-4" id='aca-distancias'>
                 <div className="flex justify-content-between relative z-50">
-                <StatusCard color="red" icon="stars" title="Restaurantes">
-                        Disfruta de la gastronomia de la zona.
-                    </StatusCard>
-                    <StatusCard color="red" icon="stars" title="Alojamiento">
+                    <StatusCard color="logo1" icon="A" title="Alojamiento">
                         Los mejores hoteles en las sierras.
                     </StatusCard>
+                <StatusCard color="logo1" icon="R" title="Restaurantes">
+                        Disfruta de la gastronomia de la zona.
+                    </StatusCard>
                     <StatusCard
-                        color="lightBlue"
-                        icon="autorenew"
+                        color="logo1"
+                        icon="F"
                         title="Fotos"
                     >
                         Imagenes de nuestras mejores vistas.
                     </StatusCard>
                 </div>
+                <div className="flex flex-wrap mt-20">
+                    <div className="w-full md:w-8/12 px-16 ">
+                        <H4 color="gray">¿Dónde alojarse?</H4>
+                    <div className="flex flex-wrap">
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hostería"
+                        name="LA MORADA"
+                    />
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hostería"
+                        name="LA ATALAYA"
+                    />
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hostal"
+                        name="ADRIANITA"
+                    />
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hotel"
+                        name="MOUSAÍ"
+                    />
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hotel"
+                        name="MONTECASINO"
+                    />
+                  </div>
+                 </div>
 
-                <div className="flex flex-wrap items-center mt-32">
-                    <div className="w-full md:w-5/12 px-4 mx-auto">
-                        <div className="text-blue-gray-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                            <Icon name="people" size="3xl" />
-                        </div>
-                        <H4 color="gray">Working with us is a pleasure</H4>
-                        <LeadText color="blueGray">
-                            Don't let your uses guess by attaching tooltips and
-                            popoves to any element. Just make sure you enable
-                            them first via JavaScript.
-                        </LeadText>
-                        <LeadText color="blueGray">
-                            The kit comes with three pre-built pages to help you
-                            get started faster. You can change the text and
-                            images and you're good to go. Just make sure you
-                            enable them first via JavaScript.
-                        </LeadText>
-                        <a
-                            href="#pablo"
-                            className="font-medium text-light-blue-500 mt-2 inline-block"
-                        >
-                            Read More
-                        </a>
-                    </div>
+                   
+                </div>
+                <div className="flex flex-wrap mt-20">
+                    <div className="w-full md:w-8/12 px-4 mx-auto">
+                        <H4 color="gray">¿Dónde comer?</H4>
+                    <div className="flex flex-wrap">
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hostería"
+                        name="LA MORADA"
+                    />
+                    <HotelCard
+                        img={ImgHotel1}
+                        position="Hostería"
+                        name="LA ATALAYA"
+                    />
+                  </div>
+                 </div>
 
-                    <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
-                        <Card>
-                            <CardImage alt="Card Image" src={Teamwork} />
-                            <CardBody>
-                                <H6 color="gray">Top Notch Services</H6>
-                                <Paragraph color="blueGray">
-                                    The Arctic Ocean freezes every winter and
-                                    much of the sea-ice then thaws every summer,
-                                    and that process will continue whatever
-                                    happens.
-                                </Paragraph>
-                            </CardBody>
-                        </Card>
-                    </div>
+                   
                 </div>
             </div>
         </section>
