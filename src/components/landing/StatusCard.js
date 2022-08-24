@@ -1,6 +1,5 @@
 import Card from '@material-tailwind/react/Card';
 import CardBody from '@material-tailwind/react/CardBody';
-import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
 import Paragraph from '@material-tailwind/react/Paragraph';
 
@@ -24,24 +23,26 @@ const colors = {
     purple: 'bg-purple-500',
     pink: 'bg-pink-500',
     red: 'bg-red-500',
-    logo1: 'bg-logo1-500',
-    logo2: 'bg-logo2-500',
+    logo1: 'bg-color2-utu',
+    logo2: 'bg-color4-utu',
 };
 
-export default function StatusCard({ color, icon, title, children }) {
+export default function StatusCard({ color, icon, title, children, url }) {
     return (
-        <div className="w-full md:w-4/12 px-4 flex justify-center text-center">
+        <div className="w-full md:w-4/12 px-4 flex justify-center text-center mt-3">
+            <a href={url}>
             <Card>
                 <CardBody>
                     <div
-                        className={`p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-md rounded-full ${colors[color]}`}
+                        className={`p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-md rounded-full ${colors[color]}`}
                     >
-                        <Icon name={icon} size="xl" color="white" />
+                     {icon}
                     </div>
                     <H6 color="gray">{title}</H6>
                     <Paragraph color="blueGray">{children}</Paragraph>
                 </CardBody>
             </Card>
+            </a>
         </div>
     );
 }

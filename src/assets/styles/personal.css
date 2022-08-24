@@ -1,3 +1,18 @@
 .bg-initial-page{
 	background-image:  url('/src/assets/img/fondoInicioUTU.jpg');
 }
+.bg-color1-utu{
+	background-color: #706E60;
+}
+.bg-color2-utu{
+	background-color: #BDA694;
+}
+.bg-color3-utu{
+	background-color: #D1C596;
+}
+.bg-color4-utu{
+	background-color: #EDDFC7;
+}
+.color-text-white{
+	color:white
+}

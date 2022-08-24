@@ -1,6 +1,5 @@
 import Title from 'components/landing/Title';
 import ContactCard from 'components/landing/ContactCard';
-import Form from 'components/landing/Form';
 
 export default function ContactSection() {
     return (
@@ -26,8 +25,6 @@ export default function ContactSection() {
                         make up the bulk of the card's content.
                     </ContactCard>
                 </div>
-
-                <Form />
             </div>
         </section>
     );

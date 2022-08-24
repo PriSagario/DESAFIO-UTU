@@ -11,7 +11,7 @@ export default function Landing() {
             <div className="absolute w-full z-20">
                 <DefaultNavbar />
             </div>
-            <main>
+            <main className="w-100">
                 <Header />
                 <WorkingSection />
                 <TeamSection />

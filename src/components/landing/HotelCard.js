@@ -1,20 +1,21 @@
 import Card from '@material-tailwind/react/Card';
-import Image from '@material-tailwind/react/Image';
-import H6 from '@material-tailwind/react/Heading6';
-import Paragraph from '@material-tailwind/react/Paragraph';
-import Button from '@material-tailwind/react/Button';
-import Icon from '@material-tailwind/react/Icon';
 
-export default function LandingTeamCard({ img, name, position }) {
+const colors = {
+    red: 'bg-red-500',
+    logo1: 'bg-color2-utu'
+};
+
+
+export default function HotelCard({ img, name, position, url }) {
     return (
-        <Card className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-16">
-            <div className="px-16">
-                <Image src={img} alt={name} raised />
-                <div className="pt-6 text-center">
-                    <H6 color="white">{name}</H6>
-                    <Paragraph color="white">{position}</Paragraph>
-                </div>
+        <a href={url} target="_blank">
+        <Card className="flex flex-col bg-color1-utu w-48 mx-5 my-6">
+            <img className='mb-5 w-48 h-32 rounded' src={img} />
+            <div>
+                <h3 className='text-center color-text-white font-bold'>{name}</h3>
+                <h6 className='text-center color-text-white'>{position}</h6>
             </div>
         </Card>
+        </a>
     );
 }

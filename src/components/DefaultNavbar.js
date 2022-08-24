@@ -42,9 +42,7 @@ export default function DefaultNavbar() {
                                 &nbsp;Sobre la carrera
                             </NavLink>
                             <NavLink
-                                href="https://material-tailwind.com/components?ref=mtk"
-                                target="_blank"
-                                rel="noreferrer"
+                                href="#Altimetrias"
                                 ripple="light"
                             >
                                 &nbsp;Distancias
