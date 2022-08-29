@@ -31,7 +31,7 @@ export default function DefaultNavbar() {
 
                 <NavbarCollapse open={openNavbar} style={{width:'100%'}}>
                     <Nav >
-                        <div className="flex flex-col z-50 lg:flex-row lg:items-center ">
+                        <div className="flex flex-col z-50 lg:flex-row lg:items-center absoluteMenu">
                             <NavLink
                                 ripple="light"
                                 onClick={() => setOpenNavbar(!openNavbar)}
@@ -51,6 +51,7 @@ export default function DefaultNavbar() {
                                 rel="noreferrer"
                             >
                                 <Button
+                                    id="inscriptionsButton"
                                     color="transparent"
                                     className="bg-white text-black ml-6"
                                     ripple="dark"

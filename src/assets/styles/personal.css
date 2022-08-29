@@ -16,3 +16,75 @@
 .color-text-white{
 	color:white
 }
+
+#Altimetrias > div > div {
+	width: 80%;
+	align-self: center;
+}
+
+#footerPhrase {
+	width: 40vw;
+}
+
+#footer {
+	align-items: center;
+}
+
+@media (max-width: 1023px ) and (min-width: 768px) {
+	#icons {
+		justify-content: center;
+		margin-bottom: 2rem !important;
+	}
+}
+
+@media (max-width: 1023px) {
+	#footer {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media (max-width: 1023px) {
+	.absoluteMenu{
+		position: absolute;
+		right: 80px;
+		top: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	#inscriptionsButton	{
+		padding: 12px;
+	}
+}
+
+@media (max-width: 527px){
+	.customCards {
+		width: 9rem;
+		height: 13.9rem;
+	}	
+}
+
+@media (max-width: 432px){
+	.textCards {
+		font-size: 10.5px;
+	}
+	.customCards {
+		width: 8rem;
+		height: 13rem;
+	}	
+}
+
+@media (max-width: 399px){
+	.customCards {
+		width: 7rem;
+		height: 12rem;
+	}	
+}
+
+@media (max-width: 367px){
+	.customCards {
+		width: 6rem;
+		height: 11rem;
+	}	
+}

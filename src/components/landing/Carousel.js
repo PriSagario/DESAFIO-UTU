@@ -8,7 +8,7 @@ import Image5 from '../../assets/img/altimetriaVA.jpg';
 
 export default function CarouselComponent(){
     return (
-        <Carousel statusFormatter={function(currentItem, total){return `${currentItem} de ${total}`}} autoPlay='true'>
+        <Carousel statusFormatter={function(currentItem, total){return `${currentItem} de ${total}`}} autoPlay={true}>
             <div>
                 <img src={Image1}/>
             </div>
