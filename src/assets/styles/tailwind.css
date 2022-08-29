@@ -1522,6 +1522,7 @@ video {
 .h-7{height:1.75rem}
 .h-10{height:2.5rem}
 .h-32{height:8rem}
+.h-40{height:15rem}
 .h-20{height:5rem}
 .h-12{height:3rem}
 .h-6{height:1.5rem}
@@ -1547,6 +1548,7 @@ video {
 .w-16{width:4rem}
 .w-7{width:1.75rem}
 .w-32{width:8rem}
+.w-36{width:10rem}
 .w-12{width:3rem}
 .w-10{width:2.5rem}
 .w-6{width:1.5rem}
@@ -2521,12 +2523,28 @@ video {
 		justify-content: space-between;
 	}
 }
+
+#Altimetrias > div > div {
+	width: 80%;
+}
+
+#root > div > nav > div > div.lg\:flex.flex-grow.items-center.block.undefined {
+	position: absolute;
+	right: 80px;
+}
+	
+.customCards {
+	height: 14rem;
+	width: 8.9rem;
+	margin: 1rem;
+}
+
 @media (min-width: 1024px){
 	.lg\:order-2{
 		order: 2;
 	}
 	.lg\:order-3{
-		order: 3;
+		order: 3; 
 	}
 	.lg\:order-1{
 		order: 1;

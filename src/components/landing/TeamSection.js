@@ -3,8 +3,8 @@ import CarouselComponent from './Carousel';
 
 export default function TeamSection() {
     return (
-        <section className="pt-20">
-            <div className="container max-w-7xl mx-auto px-4" id="Altimetrias">
+        <section className="pt-4">
+            <div className="container max-w-7xl mx-auto px-4" id="Altimetrias" >
                 <Title heading="ALTIMETRIAS" >
                     <CarouselComponent/>
                 </Title>

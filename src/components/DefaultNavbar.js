@@ -7,7 +7,6 @@ import NavbarToggler from '@material-tailwind/react/NavbarToggler';
 import NavbarCollapse from '@material-tailwind/react/NavbarCollapse';
 import Nav from '@material-tailwind/react/Nav';
 import NavLink from '@material-tailwind/react/NavLink';
-import Icon from '@material-tailwind/react/Icon';
 import Button from '@material-tailwind/react/Button';
 import Logo from '../assets/img/Re__Logo_cerro.png';
 
@@ -15,8 +14,8 @@ export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
 
     return (
-        <Navbar color="transparent" navbar>
-            <NavbarContainer>
+        <Navbar color="transparent" className="relative z-50 h-100" >
+            <NavbarContainer >
                 <NavbarWrapper>
                 <img
                   width={120}
@@ -30,20 +29,19 @@ export default function DefaultNavbar() {
                     />
                 </NavbarWrapper>
 
-                <NavbarCollapse open={openNavbar}>
-                    <Nav>
-                        <div className="flex flex-col z-50 lg:flex-row lg:items-center">
+                <NavbarCollapse open={openNavbar} style={{width:'100%'}}>
+                    <Nav >
+                        <div className="flex flex-col z-50 lg:flex-row lg:items-center ">
                             <NavLink
-                                href="https://material-tailwind.com/documentation/quick-start?ref=mtk"
-                                target="_blank"
-                                rel="noreferrer"
                                 ripple="light"
+                                onClick={() => setOpenNavbar(!openNavbar)}
                             >
                                 &nbsp;Sobre la carrera
                             </NavLink>
                             <NavLink
                                 href="#Altimetrias"
                                 ripple="light"
+                                onClick={() => setOpenNavbar(!openNavbar)}
                             >
                                 &nbsp;Distancias
                             </NavLink>
@@ -56,6 +54,7 @@ export default function DefaultNavbar() {
                                     color="transparent"
                                     className="bg-white text-black ml-6"
                                     ripple="dark"
+                                    onClick={() => setOpenNavbar(!openNavbar)}
                                 >
                                     INSCRIPCIONES
                                 </Button>
