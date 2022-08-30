@@ -4,13 +4,8 @@ import Icon from '@material-tailwind/react/Icon';
 
 export default function DefaultFooter() {
     return (
-        <>
-            <footer id="footer" className="relative bg-gray-100 pt-8 pb-6 flex justify-content justify-center">
-                <div className="container max-w-7xl mx-auto px-4">
-                    <div className="flex md\:flex-row text-center lg:text-left pt-6">
-                        <div className="w-full lg:w-6/12 px-4">
-                            <H5 color="gray">Contactanos!</H5>
-                            <div id="icons" className="flex gap-2 mt-6 md:justify-start md:mb-0 mb-8 justify-center">
+        <footer className='bg-white h-32 flex justify-between items-center px-52'>
+                            <div id="icons" className="flex gap-2 md:justify-start md:mb-0 mb-8">
                                 <a
                                     href="https://www.facebook.com/ultratrailutu/"
                                     className="grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
@@ -44,14 +39,13 @@ export default function DefaultFooter() {
                                         name="fab fa-instagram"
                                     />
                                 </a>
+                           
+                     </div>
+            <div>
+            <div >
+                                <h1 color="gray" className="font-italic">Almawan phaway</h1>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                            <div id="footerPhrase">
-                                <H5 color="gray">Almawan phaway</H5>
-                            </div>
-            </footer>
-        </>
+            </div>
+        </footer>
     );
 }

@@ -1,6 +1,9 @@
 .bg-initial-page{
 	background-image:  url('/src/assets/img/fondoInicioUTU.jpg');
 }
+.bg-white{
+	background-color: white;
+}
 .bg-color1-utu{
 	background-color: #706E60;
 }
@@ -15,6 +18,13 @@
 }
 .color-text-white{
 	color:white
+}
+.px-52{padding-left:13rem;padding-right:13rem}
+
+.font-italic{
+	font-style:italic;
+	font-size: x-large;
+	font-weight: bold;
 }
 
 #Altimetrias > div > div {
