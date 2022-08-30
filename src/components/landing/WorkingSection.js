@@ -6,8 +6,17 @@ import FoodCard from 'components/landing/FoodCard';
 import CameraAltRoundedIcon from '@mui/icons-material/CameraAltRounded';
 import LuggageRoundedIcon from '@mui/icons-material/LuggageRounded';
 import RestaurantRoundedIcon from '@mui/icons-material/RestaurantRounded';
+import {useEffect} from 'react';
+import Aos from "aos";
 
 export default function WorkingSection() {
+
+    useEffect(() => {
+        Aos.init({
+          duration: 1000,
+        })
+      }, [])
+
     return (
         <section className="pb-20 bg-gray-200 -mt-32">
             <div className=" mx-auto px-4">
@@ -33,7 +42,7 @@ export default function WorkingSection() {
                 <div className="flex flex-wrap mt-20">
                     <div className="w-full px-4 mx-auto text-center" id='Hoteles' >
                         <H4 color="gray text-center">¿Dónde alojarse?</H4>
-                    <div className="flex flex-wrap justify-center align-center" style={{margin: 'auto'}}>
+                    <div data-aos="fade-right" className="flex flex-wrap justify-center align-center" style={{margin: 'auto'}}>
                      <HotelCard
                         img="./assets/img/laMorada.jpg"
                         position="Hostería"
@@ -72,7 +81,7 @@ export default function WorkingSection() {
                 <div className="flex flex-wrap mt-6 text-center">
                     <div className="w-full px-4 mx-auto" id='Comidas'>
                         <H4 color="gray">¿Dónde comer?</H4>
-                    <div className="flex flex-wrap justify-center align-center">
+                    <div data-aos="fade-left" className="flex flex-wrap justify-center align-center">
                     <FoodCard
                         img="./assets/img/sabiaQV.jpg"
                         position="Restaurante"

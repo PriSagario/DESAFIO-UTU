@@ -2,14 +2,24 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import {useEffect} from 'react';
+import Aos from "aos";
 
 export default function Galeria() {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    })
+  }, [])
+
   return (
-    <Box sx={{ width: '80%', margin: 'auto' }}>
+    <Box sx={{ width: '80%', margin: 'auto' }} data-aos="zoom-in-up">
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
+              
               src={`${item.img}?w=248&fit=crop&auto=format`}
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               loading="lazy"
