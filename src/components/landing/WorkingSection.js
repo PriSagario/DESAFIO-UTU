@@ -3,13 +3,6 @@ import H6 from '@material-tailwind/react/Heading6';
 import StatusCard from 'components/landing/StatusCard';
 import HotelCard from 'components/landing/HotelCard';
 import FoodCard from 'components/landing/FoodCard';
-import ImgHotel1 from '../../assets/img/laMorada.jpg';
-import ImgHotel2 from '../../assets/img/atalaya.jpg';
-import ImgHotel3 from '../../assets/img/adrianita.jpg';
-import ImgHotel4 from '../../assets/img/mousai.jpg';
-import ImgHotel5 from '../../assets/img/montecasino.jpg';
-import ImgHotel6 from '../../assets/img/sabiaQV.jpg';
-import ImgHotel7 from '../../assets/img/casaLatina.jpg';
 import CameraAltRoundedIcon from '@mui/icons-material/CameraAltRounded';
 import LuggageRoundedIcon from '@mui/icons-material/LuggageRounded';
 import RestaurantRoundedIcon from '@mui/icons-material/RestaurantRounded';
@@ -24,7 +17,7 @@ export default function WorkingSection() {
                        <p className="font-bold color-black"> Los mejores hoteles en las sierras.</p>
                     </StatusCard>
                 <StatusCard color="logo2" icon={<RestaurantRoundedIcon />} title="Restaurantes" url="#Comidas">
-                        Disfruta de la gastronomia de la zona.
+                <p className="font-bold color-black"> Disfruta de la gastronomia de la zona.</p>
                     </StatusCard>
                     <StatusCard
                         color="logo2"
@@ -33,7 +26,7 @@ export default function WorkingSection() {
                         title="Fotos"
                         url="#Fotos"
                     >
-                        Imagenes de nuestras mejores vistas.
+                       <p className="font-bold color-black">Imagenes de nuestras mejores vistas.</p> 
                     </StatusCard>
                 </div>
                 </div>
@@ -42,31 +35,31 @@ export default function WorkingSection() {
                         <H4 color="gray text-center">¿Dónde alojarse?</H4>
                     <div className="flex flex-wrap justify-center align-center" style={{margin: 'auto'}}>
                      <HotelCard
-                        img={ImgHotel1}
+                        img="./assets/img/laMorada.jpg"
                         position="Hostería"
                         name="LA MORADA"
                         url="http://la-morada-hosteria-hostel.allcordobahotels.com/es/"
                     />
                      <HotelCard
-                        img={ImgHotel2}
+                        img="./assets/img/atalaya.jpg"
                         position="Hostería"
                         name="LA ATALAYA"
                         url="http://www.laatalaya.com.ar/"
                     />
                      <HotelCard
-                        img={ImgHotel3}
+                        img="./assets/img/adrianita.jpg"
                         position="Hostal"
                         name="ADRIANITA"
                         url="https://hostaladrianita.com.ar/"
                     />
                     <HotelCard
-                        img={ImgHotel4}
+                        img="./assets/img/mousai.jpg"
                         position="Hotel"
                         name="MOUSAÍ"
                         url="http://www.mousai.com.ar/"
                     />
                     <HotelCard
-                        img={ImgHotel5}
+                        img="./assets/img/montecasino.jpg"
                         position="Hotel"
                         name="MONTECASINO"
                         url="http://www.hotelmontecassino.com.ar/?gclid=Cj0KCQjwgO2XBhCaARIsANrW2X3xYiJnApCctbWE-6J0bnsu6CcTmpGkw9-IngvkdGkHvbaoi69wQ8caAq0SEALw_wcB"
@@ -81,13 +74,13 @@ export default function WorkingSection() {
                         <H4 color="gray">¿Dónde comer?</H4>
                     <div className="flex flex-wrap justify-center align-center">
                     <FoodCard
-                        img={ImgHotel6}
+                        img="./assets/img/sabiaQV.jpg"
                         position="Restaurante"
                         name="SABIA QUE VENIAS"
                         url="https://www.sabiaquevenias.com.ar/"
                     />
                     <FoodCard
-                        img={ImgHotel7}
+                        img="./assets/img/casaLatina.jpg"
                         position="Restaurante"
                         name="CASA LATINA"
                         url="https://casa-latina.ola.click/?fbclid=IwAR1NVefvMMX9EQ32GvPSlKXsJki0ZHKVWVFJFnZW8WtgL6tAtwWYwhbuU2I"

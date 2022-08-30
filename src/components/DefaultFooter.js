@@ -8,7 +8,7 @@ export default function DefaultFooter() {
                             <div id="icons" className="flex gap-2 md:justify-start md:mb-0 mb-8">
                                 <a
                                     href="https://www.facebook.com/ultratrailutu/"
-                                    className="grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                                    className=" grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

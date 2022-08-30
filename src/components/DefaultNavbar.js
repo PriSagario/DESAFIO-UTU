@@ -8,7 +8,6 @@ import NavbarCollapse from '@material-tailwind/react/NavbarCollapse';
 import Nav from '@material-tailwind/react/Nav';
 import NavLink from '@material-tailwind/react/NavLink';
 import Button from '@material-tailwind/react/Button';
-import Logo from '../assets/img/Re__Logo_cerro.png';
 
 export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
@@ -21,7 +20,7 @@ export default function DefaultNavbar() {
                   width={120}
                   height={25}
                   alt="DesafioUTU Logo"
-                  src={Logo}
+                  src="./assets/img/Re__Logo_cerro.png"
                  />
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
