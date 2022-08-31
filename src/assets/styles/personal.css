@@ -28,6 +28,26 @@
 	color: #706E60;
 }
 
+.font-titles{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	font-weight:bolder;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.font-ALTI{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	font-weight:bolder;
+	color:  whitesmoke;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.margin-fotos{
+	padding: 2rem;
+}
+
 #Altimetrias > div > div {
 	width: 80%;
 	align-self: center;
@@ -40,6 +60,8 @@
 #footer {
 	align-items: center;
 }
+
+
 
 @media (max-width: 1684px){
 	.customCards {
@@ -102,6 +124,9 @@
 	.customCards {
 		width: 8.5rem;
 		height: 12.5rem;
+	}
+	#Altimetrias > div > div {
+		width: 90%;
 	}	
 }
 

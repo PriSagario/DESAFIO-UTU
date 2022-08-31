@@ -19,7 +19,7 @@ export default function WorkingSection() {
 
     return (
         <section className="pb-20 bg-gray-200 -mt-32">
-            <div className=" mx-auto px-4">
+            <div className=" mx-auto">
                 <div className="flex align-center justify-center">
                 <div className="flex flex-wrap justify-content-between relative z-50" style={{ width:"70vw"}}>
                     <StatusCard color="logo2" icon={<LuggageRoundedIcon sx={{color:'black'}}/>} title="Alojamiento" url="#Hoteles">
@@ -41,7 +41,7 @@ export default function WorkingSection() {
                 </div>
                 <div className="flex flex-wrap mt-20">
                     <div className="w-full px-4 mx-auto text-center" id='Hoteles' >
-                        <H4 color="gray text-center">¿Dónde alojarse?</H4>
+                        <h1 className='font-titles text-center'>¿DÓNDE ALOJARSE?</h1>
                     <div data-aos="fade-right" className="flex flex-wrap justify-center align-center" style={{margin: 'auto'}}>
                      <HotelCard
                         img="./assets/img/laMorada.jpg"
@@ -80,7 +80,7 @@ export default function WorkingSection() {
                 </div>
                 <div className="flex flex-wrap mt-6 text-center">
                     <div className="w-full px-4 mx-auto" id='Comidas'>
-                        <H4 color="gray">¿Dónde comer?</H4>
+                    <h1 className='font-titles text-center'>¿DÓNDE COMER?</h1>
                     <div data-aos="fade-left" className="flex flex-wrap justify-center align-center">
                     <FoodCard
                         img="./assets/img/sabiaQV.jpg"
