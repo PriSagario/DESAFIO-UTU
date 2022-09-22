@@ -28,6 +28,10 @@
 	color: #706E60;
 }
 
+.ancho-completo{
+	width: fit-content;
+}
+
 .font-titles{
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 2rem;
@@ -49,8 +53,12 @@
 }
 
 #Altimetrias > div > div {
+	margin:0;
+	padding: 0;
 	width: 80%;
 	align-self: center;
+	justify-content: center;
+	align-items: center;
 }
 
 #footerPhrase {

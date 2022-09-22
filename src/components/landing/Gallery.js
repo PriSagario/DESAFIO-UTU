@@ -14,7 +14,7 @@ export default function Galeria() {
   }, [])
 
   return (
-    <Box sx={{ width: '80%', margin: 'auto'}}>
+    <Box sx={{ width: '80%', margin: 'auto'}} >
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>

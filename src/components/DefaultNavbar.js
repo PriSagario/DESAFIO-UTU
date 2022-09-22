@@ -13,7 +13,7 @@ export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
 
     return (
-        <Navbar color="transparent" className="relative z-50 h-100" >
+        <Navbar color="transparent" className="relative z-50 h-100 container" >
             <NavbarContainer >
                 <NavbarWrapper>
                 <img
@@ -31,6 +31,17 @@ export default function DefaultNavbar() {
                 <NavbarCollapse open={openNavbar} style={{width:'100%'}}>
                     <Nav >
                         <div className="flex flex-col z-50 lg:flex-row lg:items-center absoluteMenu">
+                        <Button
+                                 id="inscriptionsButton"
+                                 color="transparent"
+                                 className="bg-white text-black ml-6"
+                                 ripple="dark"
+                                onClick={() => setOpenNavbar(!openNavbar)}
+                            >
+                                <a href="./assets/img/certificado.pdf" target="_blank" rel="noopener noreferrer" download="certificado.pdf"> 
+                               Certificado médico
+                               </a>
+                            </Button>
                             <NavLink
                                 ripple="light"
                                 onClick={() => setOpenNavbar(!openNavbar)}
@@ -38,7 +49,7 @@ export default function DefaultNavbar() {
                                 &nbsp;Sobre la carrera
                             </NavLink>
                             <NavLink
-                                href="#Altimetrias"
+                                href= '#Altimetrias'
                                 ripple="light"
                                 onClick={() => setOpenNavbar(!openNavbar)}
                             >

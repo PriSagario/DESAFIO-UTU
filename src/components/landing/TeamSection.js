@@ -5,7 +5,7 @@ import CarouselComponent from './Carousel';
 export default function TeamSection() {
     return (
         <section>
-            <div className='container' id="Altimetrias" >
+            <div className='container' id='Altimetrias'>
                 <h1 className='font-ALTI text-center margin-fotos'> ALTIMETRÍAS </h1>
                 <Title>
                     <CarouselComponent/>
