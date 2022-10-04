@@ -70,7 +70,7 @@
 }
 
 .styles-ubis{
-	width: 70%;
+	width: 75%;
 	height: 20rem;
 	margin: 1rem;
 	display: flex;
@@ -175,5 +175,11 @@
 	.customCards {
 		width: 6.7rem;
 		height: 10.5rem;
+	}
+}
+
+@media (max-width: 650px){
+	.styles-ubis {
+		flex-direction: column;
 	}
 }
