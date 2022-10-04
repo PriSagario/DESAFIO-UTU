@@ -4,6 +4,7 @@ import Header from 'components/landing/Header';
 import WorkingSection from 'components/landing/WorkingSection';
 import TeamSection from 'components/landing/TeamSection';
 import ContactSection from 'components/landing/ContactSection';
+import Ubicaciones from 'components/landing/Ubicaciones';
 
 export default function Landing() {
     return (
@@ -15,6 +16,7 @@ export default function Landing() {
                 <Header />
                 <WorkingSection />
                 <TeamSection />
+                <Ubicaciones />
                 <ContactSection />
             </main>
             <DefaultFooter />

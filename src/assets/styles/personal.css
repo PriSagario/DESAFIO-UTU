@@ -69,11 +69,34 @@
 	align-items: center;
 }
 
+.styles-ubis{
+	width: 70%;
+	height: 20rem;
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 
+.maps-styles{
+	border-radius: 1rem;
+}
+
+.font-ubis{
+	font: bolder;
+	font-size: x-large;
+	font-family: sans-serif;
+}
+
+.font-expo{
+	font: bold;
+	font-family: sans-serif;
+}
 
 @media (max-width: 1684px){
 	.customCards {
-		width: 11rem;
+		width: 11.3rem;
 		height: 15rem;
 	}	
 }

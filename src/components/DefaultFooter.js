@@ -4,7 +4,7 @@ import Icon from '@material-tailwind/react/Icon';
 
 export default function DefaultFooter() {
     return (
-        <footer className='bg-white h-32 flex justify-between items-center px-52'>
+        <footer className='bg-gray-200 h-32 flex justify-between items-center px-52'>
                             <div id="icons" className="flex gap-2 md:justify-start md:mb-0 mb-8">
                                 <a
                                     href="https://www.facebook.com/ultratrailutu/"

@@ -43,10 +43,11 @@ export default function DefaultNavbar() {
                                </a>
                             </Button>
                             <NavLink
+                                href="#Ubicaciones"
                                 ripple="light"
                                 onClick={() => setOpenNavbar(!openNavbar)}
                             >
-                                &nbsp;Sobre la carrera
+                                &nbsp;Ubicaciones
                             </NavLink>
                             <NavLink
                                 href= '#Altimetrias'

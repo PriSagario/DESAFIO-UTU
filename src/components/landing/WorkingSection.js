@@ -73,6 +73,18 @@ export default function WorkingSection() {
                         name="MONTECASINO"
                         url="http://www.hotelmontecassino.com.ar/?gclid=Cj0KCQjwgO2XBhCaARIsANrW2X3xYiJnApCctbWE-6J0bnsu6CcTmpGkw9-IngvkdGkHvbaoi69wQ8caAq0SEALw_wcB"
                     />
+                    <HotelCard
+                        img="./assets/img/namasteCab.jpg"
+                        position="Cabañas"
+                        name="NAMASTE"
+                        url="https://www.instagram.com/cabanas_namaste/?igshid=YmMyMTA2M2Y%3D"
+                    />
+                    <HotelCard
+                        img="./assets/img/lunaSerrana.jpg"
+                        position="Hotel"
+                        name="LUNA SERRANA"
+                        url="https://www.instagram.com/hotellunaserrana/?igshid=YmMyMTA2M2Y%3D"
+                    />
                   </div>
                  </div>
 
@@ -93,6 +105,12 @@ export default function WorkingSection() {
                         position="Restaurante"
                         name="CASA LATINA"
                         url="https://casa-latina.ola.click/?fbclid=IwAR1NVefvMMX9EQ32GvPSlKXsJki0ZHKVWVFJFnZW8WtgL6tAtwWYwhbuU2I"
+                    />
+                    <FoodCard
+                        img="./assets/img/aguadlPalos.jpg"
+                        position="Restaurante"
+                        name="AGUA DE LOS PALOS"
+                        url="https://aguadelospalos.com.ar/"
                     />
                   </div>
                  </div>                   
