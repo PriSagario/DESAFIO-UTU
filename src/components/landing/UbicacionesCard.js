@@ -18,7 +18,7 @@ export default function UbicacionesCard({ position, name, url }) {
       className='maps-styles'
       referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-      <CardContent sx={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
+      <CardContent className='size-maps' sx={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
       <PlaceRoundedIcon/>
       <div className='font-ubis'>
         <h3>{position}</h3> 

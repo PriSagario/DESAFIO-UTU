@@ -1,9 +1,9 @@
 import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
 import Header from 'components/landing/Header';
-import WorkingSection from 'components/landing/WorkingSection';
-import TeamSection from 'components/landing/TeamSection';
-import ContactSection from 'components/landing/ContactSection';
+import InitialSection from 'components/landing/InitialSection';
+import AltiSection from 'components/landing/AltiSection';
+import GallerySection from 'components/landing/GallerySection';
 import Ubicaciones from 'components/landing/Ubicaciones';
 
 export default function Landing() {
@@ -14,10 +14,10 @@ export default function Landing() {
             </div>
             <main className="w-100">
                 <Header />
-                <WorkingSection />
-                <TeamSection />
+                <InitialSection />
+                <AltiSection />
                 <Ubicaciones />
-                <ContactSection />
+                <GallerySection />
             </main>
             <DefaultFooter />
         </>

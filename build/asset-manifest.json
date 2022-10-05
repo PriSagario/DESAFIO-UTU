@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.78f0c638.chunk.css",
+    "main.css": "/static/css/main.0976bb33.chunk.css",
     "main.js": "/static/js/main.df6f681d.chunk.js",
     "main.js.map": "/static/js/main.df6f681d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2833f87.js",
@@ -10,7 +10,7 @@
     "static/js/2.706fb777.chunk.js.map": "/static/js/2.706fb777.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.6d258aa1.chunk.css.map": "/static/css/2.6d258aa1.chunk.css.map",
-    "static/css/main.78f0c638.chunk.css.map": "/static/css/main.78f0c638.chunk.css.map",
+    "static/css/main.0976bb33.chunk.css.map": "/static/css/main.0976bb33.chunk.css.map",
     "static/js/2.706fb777.chunk.js.LICENSE.txt": "/static/js/2.706fb777.chunk.js.LICENSE.txt",
     "static/media/all.min.css": "/static/media/fa-solid-900.eeccf4f6.woff",
     "static/media/personal.css": "/static/media/fondoInicioUTU.c6c9f704.jpg"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.d2833f87.js",
     "static/css/2.6d258aa1.chunk.css",
     "static/js/2.706fb777.chunk.js",
-    "static/css/main.78f0c638.chunk.css",
+    "static/css/main.0976bb33.chunk.css",
     "static/js/main.df6f681d.chunk.js"
   ]
 }

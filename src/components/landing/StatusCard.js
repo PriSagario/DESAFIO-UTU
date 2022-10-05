@@ -29,17 +29,21 @@ const colors = {
 
 export default function StatusCard({ color, icon, title, children, url }) {
     return (
-        <div className="w-full md:w-4/12 px-4 flex justify-center text-center mt-3">
+        <div className="w-full px-4 flex justify-center text-center mt-3 ">
             <a href={url}>
-            <Card>
+            <Card className="status-styles">
                 <CardBody>
+                    <div className='flex flex-col justify-center items-center'>
                     <div
-                        className={`p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-md rounded-full ${colors[color]}`}
+                        className={`p-3 text-center inline-flex items-center justify-center rounded-styles mb-3 shadow-md rounded-full ${colors[color]}`}
                     >
                      {icon}
                     </div>
-                    <H6 color="gray">{title}</H6>
+                    <H6 color="gray" className="status-text">{title}</H6>
+                    </div>
+                    <div className="block-init">
                     <Paragraph color="blueGray">{children}</Paragraph>
+                    </div>
                 </CardBody>
             </Card>
             </a>

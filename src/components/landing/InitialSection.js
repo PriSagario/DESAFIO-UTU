@@ -1,5 +1,3 @@
-import H4 from '@material-tailwind/react/Heading4';
-import H6 from '@material-tailwind/react/Heading6';
 import StatusCard from 'components/landing/StatusCard';
 import HotelCard from 'components/landing/HotelCard';
 import FoodCard from 'components/landing/FoodCard';
@@ -9,7 +7,7 @@ import RestaurantRoundedIcon from '@mui/icons-material/RestaurantRounded';
 import {useEffect} from 'react';
 import Aos from "aos";
 
-export default function WorkingSection() {
+export default function InitialSection() {
 
     useEffect(() => {
         Aos.init({
@@ -21,20 +19,26 @@ export default function WorkingSection() {
         <section className="pb-20 bg-gray-200 -mt-32 ancho">
             <div className=" mx-auto">
                 <div className="flex align-center justify-center">
-                <div className="flex flex-wrap justify-content-between relative z-50" style={{ width:"70vw"}}>
-                    <StatusCard color="logo2" icon={<LuggageRoundedIcon sx={{color:'black'}}/>} title="Alojamiento" url="#Hoteles">
+                <div className="w-full flex flex-row justify-center relative z-50 ">
+                    <StatusCard 
+                        color="logo2" 
+                        icon={<LuggageRoundedIcon/>} 
+                        title="Alojamiento" 
+                        url="#Hoteles">
                        <p className="font-bold color-black"> Los mejores hoteles en las sierras.</p>
                     </StatusCard>
-                <StatusCard color="logo2" icon={<RestaurantRoundedIcon />} title="Restaurantes" url="#Comidas">
-                <p className="font-bold color-black"> Disfruta de la gastronomia de la zona.</p>
+                    <StatusCard 
+                        color="logo2" 
+                        icon={<RestaurantRoundedIcon />} 
+                        title="Restaurantes" 
+                        url="#Comidas">
+                     <p className="font-bold color-black"> Disfruta de la gastronomia de la zona.</p>
                     </StatusCard>
                     <StatusCard
                         color="logo2"
-                        className="flex justify-center items-center"
                         icon={<CameraAltRoundedIcon />}
                         title="Fotos"
-                        url="#Fotos"
-                    >
+                        url="#Fotos">
                        <p className="font-bold color-black">Imagenes de nuestras mejores vistas.</p> 
                     </StatusCard>
                 </div>
